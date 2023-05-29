@@ -27,7 +27,7 @@ const routes = require('./routes');
 // Utilisez les routes dans votre application
 app.use(routes);
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT;
 app.listen(port, () => {
   console.log(`Serveur démarré sur le port ${port}.`);
 });
