@@ -6,7 +6,7 @@ const mongoose = require('mongoose');
 
 const app = express();
 app.use((req, res, next) => {
-  res.setHeader('Access-Control-Allow-Origin', 'http://localhost:5500'); // Remplacez l'URL par l'URL de votre site
+  res.setHeader('Access-Control-Allow-Origin', 'https://api-edr.onrender.com'); // Remplacez l'URL par l'URL de votre site
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
   res.setHeader(
     'Access-Control-Allow-Headers',
