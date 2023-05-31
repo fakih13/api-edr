@@ -6,7 +6,7 @@ const mongoose = require('mongoose');
 const app = express();
 
 app.use(function(req, res, next) {
-  const allowedOrigins = ['https://api-edr-production.up.railway.app', 'https://ecole.rugbymarseille.com', 'http://127.0.0.1:5500'];
+  const allowedOrigins = ['https://api-edr-production.up.railway.app', 'https://ecole.rugbymarseille.com','http://ecole.rugbymarseille.com', 'http://127.0.0.1:5500'];
   const origin = req.headers.origin;
   if (allowedOrigins.includes(origin)) {
     res.setHeader('Access-Control-Allow-Origin', origin);
